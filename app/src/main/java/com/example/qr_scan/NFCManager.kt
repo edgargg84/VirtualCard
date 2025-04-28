@@ -413,7 +413,7 @@ class NFCManager(private val context: Context) {
                 arrayOf(file.toString()),
                 null
             ) { path, uri -> 
-                Log.d("NFCManager", "Archivo escaneado: $path")
+                Log.d("NFCManager", "Archivo escaneado con exito: $path")
             }
 
             _nfcStatus.value = NFCStatus.Success("Datos guardados en: ${file.absolutePath}")
